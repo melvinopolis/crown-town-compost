@@ -1,0 +1,76 @@
+.countdown {
+	.number {
+		box-sizing: border-box;
+		position: relative;
+		bottom: 5px;
+		height: 75px;
+		width: 75px;
+		font-size: 3.5em;
+		border-radius: 50%;
+		border: 2px solid $red;
+		margin-right: 10px;
+	}
+	.countdown-text {
+		position: relative;
+		bottom: 10px;
+		margin-left: 10px;
+	}
+}
+
+.hidden {
+	display: none;
+}
+
+.weekly-options {
+	.cancel-button {
+		background: $white;
+		@include buttonStyles;
+	}
+	.cancel-pickup {
+		@include redButton;
+	}
+	.pickup-cancelled {
+		@include whiteButton;
+	}
+	.cancel-not-available {
+		@include disabledButton;
+	}
+	.pickup-cancelled , .cancel-not-available {
+		display: none;
+	}
+	
+	h4 {
+		text-align: center;
+		color: $navyBlue;
+		margin-top: 50px;
+		letter-spacing: .02em;
+	}
+	.button-group {
+		text-align: center;
+	}
+	.bucket-button {
+		width: 150px;
+		@include toggleButtons;
+		&.door {
+			margin-right: $buttonMargin;
+			border-radius: $buttonRadiusLeft;
+		}
+		&.garage {
+			margin-left: $buttonMargin;
+			border-radius: $buttonRadiusRight;
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

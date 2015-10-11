@@ -1,0 +1,83 @@
+.active-icon {
+	background: $red;
+}
+
+.info-header {
+	background: $navyBlue;
+	text-align: center;
+	padding-bottom: 10px;
+	.call, .email {
+		@include buttonStyles;
+		@include redButton;
+		margin: 0 auto;
+	}
+	.call {
+		letter-spacing: $nav-letter-spacing;
+	}
+	.search {
+		color: $white;
+		text-align: left;
+		padding: 0 20px 10px;
+		h4 {
+			margin-top: 0;
+			font-weight: $font-normal;
+		}
+		input {
+			width: 80%;
+			height: 25px;
+			color: $navyBlue;
+		}
+	}
+}
+
+.requests {
+	text-align: center;
+	padding: 20px;
+	h2, h4, .submit-button {
+		text-align: left;
+		font-weight: $font-normal;
+	}
+	h4 {
+		margin-top: 40px;
+	}
+	textarea {
+		border: 2px solid $red;
+		width: 80%;
+	}
+	.supply-button {
+		@include toggleButtons;
+		width: 100px;
+		&.liners {
+			margin-right: $buttonMargin;
+			border-radius: $buttonRadiusLeft;
+		}
+		&.lid {
+			margin-right: $buttonMargin;
+			margin-left: $buttonMargin;
+			border-radius: 0;
+		}
+		&.bucket {
+			margin-left: $buttonMargin;
+			border-radius: $buttonRadiusRight;
+		}
+	}
+
+	.sign-button {
+		@include toggleButtons;
+		width: 150px;
+		&.keep {
+			margin-right: $buttonMargin;
+			border-radius: $buttonRadiusLeft;
+		}
+		&.remove {
+			margin-left: $buttonMargin;
+			border-radius: $buttonRadiusRight;
+		}
+	}
+
+	.submit-button {
+		@include buttonStyles;
+		@include whiteButton;
+		cursor: pointer;
+	}
+}

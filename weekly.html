@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Crown Town Compost</title>
+
+	<link href='https://fonts.googleapis.com/css?family=Raleway:400,200,600' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="main.css">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script src="app.js"></script>
+</head>
+<body>
+	<div class="header">
+		<img src="img/ctc-logo.png" alt="Crown Town Comopost logo" class="logo">
+
+		<div class="nav">
+			<ul class="nav-tabs">
+				<li class="active"><a href="weekly.html">WEEKLY</a></li>
+				<li><a href="help.html">HELP</a></li>
+				<li><a href="account.html">ACCOUNT</a></li>
+			</ul>
+		</div>
+	</div>
+
+	<div class="sub-header countdown">
+		<div class="number">7</div>
+		<div class="countdown-text">DAYS UNTIL PICK-UP</div>
+	</div>
+
+	<div class="weekly-options">
+		<div class="cancel-button cancel-pickup">CANCEL PICK-UP</div>
+		<div class="cancel-button pickup-cancelled">&#10003; PICK-UP CANCELLED</div>
+		<div class="cancel-button cancel-not-available" disabled>TOO LATE TO CANCEL</div>
+
+		<h4>Bucket location for pickup:</h4>
+		<div class="button-group">
+			<div class="bucket-button door active"><span>&#10003;</span> Front Door</div>
+			<div class="bucket-button garage"><span class="hidden">&#10003;</span> Garage</div>
+		</div>	
+	</div>
+	
+</body>
+</html>

@@ -1,0 +1,51 @@
+.current-plan, .plan-options {
+	text-align: center;
+	padding: 20px;
+
+	h3, h4 {
+		text-align: left;
+		font-weight: $font-normal;
+	}	
+}
+
+.current-plan {
+	h2 {
+		color: $red;
+		font-weight: $font-light;
+		margin: 10px;
+	}
+	.plan {
+		border: 2px solid $red;
+		padding: 10px;
+	}
+}
+
+.plan-options {
+	// display: none;
+	.plan-button, .bucket-plan-button {
+		@include toggleButtons;
+		width: 150px;
+	}
+
+	.plan-button {
+		&.monthly {
+			margin-right: $buttonMargin;
+			border-radius: $buttonRadiusLeft;
+		}
+		&.annual {
+			margin-left: $buttonMargin;
+			border-radius: $buttonRadiusRight;
+		}
+	}
+
+	.bucket-plan-button {
+		&.one {
+			margin-right: $buttonMargin;
+			border-radius: $buttonRadiusLeft;
+		}
+		&.two {
+			margin-left: $buttonMargin;
+			border-radius: $buttonRadiusRight;
+		}
+	}
+}
